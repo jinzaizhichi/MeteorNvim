@@ -3,11 +3,6 @@ return {
     {
         "neovim/nvim-lspconfig",
         lazy = true,
-        dependencies = {
-            "nvim-lua/lsp_extensions.nvim",
-            "RishabhRD/popfix",
-            "RishabhRD/nvim-lsputils",
-        },
     },
     -- Configure lsp with json
     {

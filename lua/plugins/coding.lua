@@ -29,7 +29,8 @@ return {
     -- Syntax hightlight
     {
         "nvim-treesitter/nvim-treesitter",
-        run = ":TSUpdate",
+        branch = "master",
+        build = ":TSUpdate",
         config = function()
             require("plugins.config.treesitter")
         end
@@ -82,7 +83,8 @@ return {
     -- Identline
     {
         "lukas-reineke/indent-blankline.nvim",
-        version = "2.20.7",
+        version = "^3",
+        main = "ibl",
         config = function()
             require('plugins.config.identline')
         end
@@ -99,16 +101,14 @@ return {
     -- Fidget
     {
         "j-hui/fidget.nvim",
-        tag = "legacy",
-        config = function()
-            require("fidget").setup()
-        end
+        version = "*",
+        opts = {},
     },
 
     -- Color picker
     {
         "uga-rosa/ccc.nvim",
-        tag = "v1.7.0",
+        tag = "v2.0.3",
         config = function()
             require("plugins.config.color-picker")
         end

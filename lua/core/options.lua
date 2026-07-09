@@ -4,9 +4,6 @@ vim.api.nvim_command("filetype plugin on")
 -- Enable syntax highlighting
 vim.api.nvim_command("syntax enable")
 
--- Set encoding to UTF-8
-vim.opt.encoding = "UTF-8"
-
 -- Enable clipboard integration with unnamedplus
 vim.opt.clipboard = "unnamedplus"
 
@@ -48,6 +45,9 @@ vim.opt.updatetime = 2000
 
 -- Enable true color support in terminal
 vim.opt.termguicolors = true
+
+-- Rounded borders on all floating windows (hover, signature help, diagnostics, etc.)
+vim.o.winborder = "rounded"
 
 -- Set the GUI font
 vim.opt.guifont = "DroidSansMono Nerd Font:h11"
